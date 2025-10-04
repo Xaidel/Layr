@@ -1,8 +1,7 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { Eye, Code, Download, Settings, Smartphone, Tablet, Monitor, Trash2 } from "lucide-react"
+import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip"
 
 
 export default function AppHeader() {
@@ -29,25 +28,57 @@ export default function AppHeader() {
       </div>
 
       <div className="flex items-center gap-2">
-        <Button variant="ghost" size="sm" className="gap-2">
-          <Eye className="h-4 w-4" />
-          Preview
-        </Button>
-        <Button variant="ghost" size="sm" className="gap-2">
-          <Code className="h-4 w-4" />
-          Code
-        </Button>
-        <Button variant="ghost" size="sm" className="gap-2">
-          <Download className="h-4 w-4" />
-          Export
-        </Button>
+        <Tooltip>
+          <TooltipTrigger>
+            <Button variant="ghost" size="sm" className="gap-2">
+              <Eye className="h-4 w-4" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Preview</p>
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger>
+            <Button variant="ghost" size="sm" className="gap-2">
+              <Code className="h-4 w-4" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Code</p>
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger>
+            <Button variant="ghost" size="sm" className="gap-2">
+              <Download className="h-4 w-4" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Export</p>
+          </TooltipContent>
+        </Tooltip>
         <Separator orientation="vertical" className="mx-2 h-6" />
-        <Button variant="ghost" size="icon" className="h-8 w-8" >
-          <Trash2 className="h-4 w-4" />
-        </Button>
-        <Button variant="ghost" size="icon" className="h-8 w-8">
-          <Settings className="h-4 w-4" />
-        </Button>
+        <Tooltip>
+          <TooltipTrigger>
+            <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-red-600" >
+              <Trash2 className="h-4 w-4" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Delete</p>
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger>
+            <Button variant="ghost" size="icon" className="h-8 w-8">
+              <Settings className="h-4 w-4" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Settings</p>
+          </TooltipContent>
+        </Tooltip>
       </div>
     </div>
   )
