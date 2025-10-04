@@ -1,5 +1,5 @@
 
-# No-Code Platform (Proof of Concept)
+#  Layr(No Code Platform)
 
 This is a **proof-of-concept no-code platform** built with [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/).  
 
