@@ -28,9 +28,8 @@ The goal is to explore how **composable UI primitives** can serve as the foundat
 
 ---
 
-## Getting Started
 
-Clone the repo:
+## Clone the repo:
 
 ```bash
 git clone https://github.com/Xaidel/Layr.git
@@ -41,10 +40,9 @@ cd Layr
 ```bash
 npm install
 ```
-```
 
-# Run Development Server
-```
+## Run Development Server
+```bash
 npm run dev
 ```
 ```
