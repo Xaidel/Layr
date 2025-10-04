@@ -1,15 +1,15 @@
 import AppHeader from "./appheader";
+import ComponentPallete from "./componentpallete";
+import PropsPanel from "./propspanel";
 
 export default function AppLayout() {
   return (
     <>
       <AppHeader />
       <div className="flex h-screen">
-        <aside className="h-full flex-1 border-r border-border ">
-        </aside>
+        <ComponentPallete />
         <main className="h-full w-full flex-3 "></main>
-        <aside className="h-full w-full flex-1 border-l border-border">
-        </aside>
+        <PropsPanel />
       </div>
     </>
   )
