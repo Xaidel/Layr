@@ -19,6 +19,7 @@ The goal is to explore how **composable UI primitives** can serve as the foundat
 ---
 
 ## System Architecture (Tree Overview)
+
 ```
 src/
 ├─ app/ # app shell & routing
@@ -46,7 +47,7 @@ src/
 │ │
 │ ├─ palette/
 │ │ ├─ ComponentPalette.tsx
-|  
+|
 ├─ lib/
 │ ├─ utils.ts
 |
@@ -58,6 +59,7 @@ src/
 ├─ index.css
 └─ main.tsx
 ```
+
 ---
 
 ## Tech Stack
