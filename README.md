@@ -1,7 +1,6 @@
+# Layr(No Code Platform)
 
-#  Layr(No Code Platform)
-
-This is a **proof-of-concept no-code platform** built with [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/).  
+This is a **proof-of-concept no-code platform** built with [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn/ui](https://ui.shadcn.com/).
 
 The goal is to explore how **composable UI primitives** can serve as the foundation for a drag-and-drop / no-code builder experience.
 
@@ -28,20 +27,21 @@ The goal is to explore how **composable UI primitives** can serve as the foundat
 
 ---
 
-
 ## Clone the repo:
 
 ```bash
 git clone https://github.com/Xaidel/Layr.git
-cd Layr 
+cd Layr
 ```
 
 ## Installing dependencies
+
 ```bash
 npm install
 ```
 
 ## Run Development Server
+
 ```bash
 npm run dev
 ```
