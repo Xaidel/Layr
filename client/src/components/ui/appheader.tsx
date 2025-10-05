@@ -1,14 +1,22 @@
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import { Eye, Code, Download, Settings, Smartphone, Tablet, Monitor, Trash2 } from "lucide-react"
-import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip"
-
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import {
+  Eye,
+  Code,
+  Download,
+  Settings,
+  Smartphone,
+  Tablet,
+  Monitor,
+  Trash2,
+} from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipTrigger } from './tooltip';
 
 export default function AppHeader() {
   return (
     <div
       className="flex h-14 items-center justify-between border-b border-border px-4"
-      style={{ backgroundColor: "var(--toolbar-bg)" }}
+      style={{ backgroundColor: 'var(--toolbar-bg)' }}
     >
       <div className="flex items-center gap-2">
         <h1 className="text-lg font-semibold">Layr</h1>
@@ -61,7 +69,11 @@ export default function AppHeader() {
         <Separator orientation="vertical" className="mx-2 h-6" />
         <Tooltip>
           <TooltipTrigger>
-            <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-red-600" >
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-8 w-8 hover:text-red-600"
+            >
               <Trash2 className="h-4 w-4" />
             </Button>
           </TooltipTrigger>
@@ -81,5 +93,5 @@ export default function AppHeader() {
         </Tooltip>
       </div>
     </div>
-  )
+  );
 }
