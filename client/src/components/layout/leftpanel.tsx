@@ -1,10 +1,10 @@
 'use client';
 
 import { Layers, Package } from 'lucide-react';
-import ComponentPalette from './componentpalette';
-import { Tabs, TabsList, TabsContent, TabsTrigger } from './tabs';
+import ComponentPalette from '../../editor/palette/componentpalette';
+import { Tabs, TabsList, TabsContent, TabsTrigger } from '../ui/tabs';
 import {} from '@radix-ui/react-tabs';
-import HierarchyTree from './hierarchytree';
+import HierarchyTree from '../../editor/hierarchy/hierarchytree';
 
 export default function LeftPanel() {
   return (

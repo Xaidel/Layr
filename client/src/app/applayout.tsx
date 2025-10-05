@@ -1,6 +1,6 @@
 import AppHeader from './appheader';
-import LeftPanel from './leftpanel';
-import PropsPanel from './propspanel';
+import LeftPanel from '../components/layout/leftpanel';
+import PropsPanel from '../components/layout/propspanel';
 
 export default function AppLayout() {
   return (
