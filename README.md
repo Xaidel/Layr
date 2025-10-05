@@ -18,6 +18,48 @@ The goal is to explore how **composable UI primitives** can serve as the foundat
 
 ---
 
+## System Architecture (Tree Overview)
+
+src/
+├─ app/ # app shell & routing
+│ ├─ appheader.tsx
+│ └─ applayout.tsx
+│
+├─ components/ # reusable primitives & ui kit (shadcn)
+│ ├─ layout/
+│ | ├─ leftpanel.tsx
+│ | ├─ propspanel.tsx
+│ | └─ scroll-area.tsx
+| |
+│ ├─ ui/
+│ │ ├─ button.tsx
+│ │ ├─ input.tsx
+│ │ ├─ separator.tsx
+│ │ ├─ tabs.tsx
+│ │ └─ tooltip.tsx
+│
+├─ editor/ # main builder/editor domain
+│ ├─ canvas/
+│ │
+│ ├─ hierarchy/
+│ │ ├─ HierarchyTree.tsx
+│ │
+│ ├─ palette/
+│ │ ├─ ComponentPalette.tsx
+|  
+├─ lib/
+│ ├─ utils.ts
+|
+├─ types/
+│ ├─ constants.ts
+│ ├─ type.ts
+|
+├─ App.tsx
+├─ index.css
+└─ main.tsx
+
+---
+
 ## Tech Stack
 
 - [React](https://react.dev/)

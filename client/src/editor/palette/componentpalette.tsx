@@ -1,6 +1,6 @@
 import { Search } from 'lucide-react';
 import { useState } from 'react';
-import { Input } from './input';
+import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { componentCategories } from '@/types/constants';
 import type { Component, ComponentCategory } from '@/types/type';

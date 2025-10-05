@@ -11,7 +11,11 @@ import {
   Trash2,
   Layers2,
 } from 'lucide-react';
-import { Tooltip, TooltipContent, TooltipTrigger } from './tooltip';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '../components/ui/tooltip';
 
 export default function AppHeader() {
   return (
