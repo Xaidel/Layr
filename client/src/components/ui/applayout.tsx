@@ -1,16 +1,18 @@
-import AppHeader from "./appheader";
-import ComponentPallete from "./componentpallete";
-import PropsPanel from "./propspanel";
+import AppHeader from './appheader';
+import LeftPanel from './leftpanel';
+import PropsPanel from './propspanel';
 
 export default function AppLayout() {
   return (
     <>
-      <AppHeader />
-      <div className="flex h-screen">
-        <ComponentPallete />
-        <main className="h-full w-full flex-3 "></main>
-        <PropsPanel />
+      <div className="flex flex-col h-screen">
+        <AppHeader />
+        <div className="flex h-screen">
+          <LeftPanel />
+          <main className="h-full w-full flex-3 "></main>
+          <PropsPanel />
+        </div>
       </div>
     </>
-  )
+  );
 }
