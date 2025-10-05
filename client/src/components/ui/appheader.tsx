@@ -9,6 +9,7 @@ import {
   Tablet,
   Monitor,
   Trash2,
+  Layers,
 } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from './tooltip';
 
@@ -19,7 +20,12 @@ export default function AppHeader() {
       style={{ backgroundColor: 'var(--toolbar-bg)' }}
     >
       <div className="flex items-center gap-2">
-        <h1 className="text-lg font-semibold">Layr</h1>
+        <h1 className="text-lg font-semibold">
+          <div className="flex gap-3 items-center">
+            <Layers />
+            Layr
+          </div>
+        </h1>
         <Separator orientation="vertical" className="mx-2 h-6" />
       </div>
 
