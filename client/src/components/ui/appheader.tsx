@@ -9,7 +9,7 @@ import {
   Tablet,
   Monitor,
   Trash2,
-  Layers,
+  Layers2,
 } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from './tooltip';
 
@@ -22,7 +22,7 @@ export default function AppHeader() {
       <div className="flex items-center gap-2">
         <h1 className="text-lg font-semibold">
           <div className="flex gap-3 items-center">
-            <Layers />
+            <Layers2 />
             Layr
           </div>
         </h1>
