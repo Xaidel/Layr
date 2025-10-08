@@ -10,9 +10,9 @@ export default function AppLayout() {
         <AppHeader />
         <div className="flex flex-1 overflow-hidden">
           <LeftPanel />
-       <main className="flex-1 overflow-auto bg-muted/20 p-4">
-          <Canvas onSelectComponent={() => {}} />
-        </main>
+          <main className="flex-1 overflow-auto bg-muted/20 p-4">
+            <Canvas onSelectComponent={() => {}} />
+          </main>
           <PropsPanel />
         </div>
       </div>
