@@ -1,7 +1,7 @@
 import { Search } from 'lucide-react';
 import { useState } from 'react';
 import { Input } from '@/components/ui/input';
-import { ScrollArea } from '@radix-ui/react-scroll-area';
+import { ScrollArea } from '@/app/scroll-area';
 import { componentCategories } from '@/types/constants';
 import type { Component, ComponentCategory } from '@/types/type';
 
@@ -58,6 +58,13 @@ export default function ComponentPalette() {
                     {category.components.map((component: Component) => (
                       <button
                         key={component.type}
+                        draggable
+                        onDragStart={(e) => {
+                          e.dataTransfer.setData(
+                            'application/reactflow',
+                            JSON.stringify(component),
+                          );
+                        }}
                         className="component-item flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm text-foreground"
                       >
                         <component.icon className="h-4 w-4 text-muted-foreground" />

@@ -20,13 +20,12 @@ The goal is to explore how **composable UI primitives** can serve as the foundat
 
 ## System Architecture (Tree Overview)
 
-```
 src/
 ├─ app/ # app shell & routing
 │ ├─ appheader.tsx
 │ └─ applayout.tsx
 │
-├─ components/  # reusable primitives & ui kit (shadcn)
+├─ components/ # reusable primitives & ui kit (shadcn)
 │ ├─ layout/
 │ | ├─ leftpanel.tsx
 │ | ├─ propspanel.tsx
@@ -47,7 +46,7 @@ src/
 │ │
 │ ├─ palette/
 │ │ ├─ ComponentPalette.tsx
-|
+|  
 ├─ lib/
 │ ├─ utils.ts
 |
@@ -58,7 +57,6 @@ src/
 ├─ App.tsx
 ├─ index.css
 └─ main.tsx
-```
 
 ---
 

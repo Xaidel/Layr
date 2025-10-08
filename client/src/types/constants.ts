@@ -161,3 +161,10 @@ export const componentCategories: ComponentCategory[] = [
     ],
   },
 ];
+
+export interface ComponentItem {
+  id: string;
+  type: string;
+  label: string;
+  props?: Record<string, unknown>;
+}
