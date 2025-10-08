@@ -13,7 +13,6 @@ export default function AppLayout() {
           <main className="flex-1 overflow-auto bg-muted/20 p-4">
             <Canvas onSelectComponent={() => {}} />
           </main>
-          <h1>Hello</h1>
           <PropsPanel />
         </div>
       </div>
